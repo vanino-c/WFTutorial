@@ -10,11 +10,53 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
+            if (FormAuthorization.users.type == "agent") buttonOpenAgents.Enabled = false;
+            labelHello.Text = "Приветствую тебя, " + FormAuthorization.users.login + "!";
+        }
+
+        private void buttonOpenClients_Click(object sender, EventArgs e)
+        {
+            Form formClient = new FormClient();
+            formClient.Show();
+        }
+
+        private void buttonOpenAgents_Click(object sender, EventArgs e)
+        {
+            Form formAgent = new FormAgent();
+            formAgent.Show();
+        }
+
+        private void buttonOpenRealEstates_Click(object sender, EventArgs e)
+        {
+            Form formRealEstate = new FormRealEstate();
+            formRealEstate.Show();
+        }
+
+        private void buttonOpenSupplies_Click(object sender, EventArgs e)
+        {
+            Form formSupply = new FormSupply();
+            formSupply.Show();
+        }
+        private void buttonOpenDemands_Click(object sender, EventArgs e)
+        {
+            Form formDemands = new FormDemands();
+            formDemands.Show();
+        }
+
+        private void buttonOpenDeals_Click(object sender, EventArgs e)
+        {
+            Form formDeals = new FormDeal();
+            formDeals.Show();
+        }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

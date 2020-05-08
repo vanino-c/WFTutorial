@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a84adbb1d26b4c5e8ced254b610fd7d4" Name="Diagram1">
+        <EntityTypeShape EntityType="WFTutuorialModel.AgentsSet" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.ClientSet" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.DealSet" Width="1.5" PointX="8.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.DemandSet" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.RealEstateSet" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.SupplySet" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutuorialModel.Users" Width="1.5" PointX="5.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="WFTutuorialModel.FK_DemandSet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_SupplySet_AgentsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_DemandSet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_SupplySet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_DealSet_DemandSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_DealSet_SupplySet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutuorialModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
